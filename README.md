@@ -2,7 +2,7 @@
 
 ## Description 
 
-This repository contains an script for add headers to a group of fits files. Fi
+This repository contains an script for add headers to a group of fits files or a file. The script use a program included in this repository that add header to a FITS file using the specifications of the library. 
 
 
 ## Requeriments 
@@ -38,8 +38,12 @@ make clean
 
 ## Usage
 
-The way to usage 
+The script works with these arguments: 
 
+ [PATH DIRECTORY FITS FILES] [VALUE CTYPE1] [VALUE CTYPE2] [VALUE CTYPE3] [VALUE CTYPE4]
+
+First argument is the path to the directory o file where the headers will be added. 
+The rest of arguments correspond with the values of headers to add in CTYPE1, CTYPE2, CTYPE3 and CTYPE4. 
 
 
 
