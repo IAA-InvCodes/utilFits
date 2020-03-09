@@ -40,7 +40,9 @@ make clean
 
 The script works with these arguments: 
 
+```
  [PATH DIRECTORY FITS FILES] [VALUE CTYPE1] [VALUE CTYPE2] [VALUE CTYPE3] [VALUE CTYPE4]
+```
 
 First argument is the path to the directory o file where the headers will be added. 
 The rest of arguments correspond with the values of headers to add in CTYPE1, CTYPE2, CTYPE3 and CTYPE4. 
