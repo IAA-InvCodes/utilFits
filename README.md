@@ -36,6 +36,12 @@ make
 make clean
 ```
 
+* Put right permissions on bash file
+```
+chmod a+wr addFitsHeader.sh
+```
+
+
 ## Usage
 
 The script works with these arguments: 
