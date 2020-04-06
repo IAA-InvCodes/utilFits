@@ -25,7 +25,7 @@ if [[ $# -ne 5 ]]; then
 fi
 
 if [[ -d $1 ]]; then
-    echo "$1 is a directory"
+    echo "Modifiying Headers files into directory $1"
     #
     # Browse all the files in the directory of parameter 1 and add the necessary headers
     #
@@ -37,7 +37,7 @@ if [[ -d $1 ]]; then
         /home/mcabrera/MILOS/utilsFits/modhead $1/$i CTYPE4 $5
     done    
 elif [[ -f $1 ]]; then
-    echo "$1 is a file"
+    echo "Modifiying Headers file $1"
     /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE1 $2
     /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE2 $3
     /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE3 $4
