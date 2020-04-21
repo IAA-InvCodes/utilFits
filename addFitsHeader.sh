@@ -31,17 +31,17 @@ if [[ -d $1 ]]; then
     #
     for i in $(ls -C1 $1)
     do
-        /home/mcabrera/MILOS/utilsFits/modhead $1/$i CTYPE1 $2
-        /home/mcabrera/MILOS/utilsFits/modhead $1/$i CTYPE2 $3
-        /home/mcabrera/MILOS/utilsFits/modhead $1/$i CTYPE3 $4
-        /home/mcabrera/MILOS/utilsFits/modhead $1/$i CTYPE4 $5
+        ./modhead $1/$i CTYPE1 $2
+        ./modhead $1/$i CTYPE2 $3
+        ./modhead $1/$i CTYPE3 $4
+        ./modhead $1/$i CTYPE4 $5
     done    
 elif [[ -f $1 ]]; then
     echo "Modifiying Headers file $1"
-    /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE1 $2
-    /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE2 $3
-    /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE3 $4
-    /home/mcabrera/MILOS/utilsFits/modhead $1 CTYPE4 $5    
+    ./modhead $1 CTYPE1 $2
+    ./modhead $1 CTYPE2 $3
+    ./modhead $1 CTYPE3 $4
+    ./modhead $1 CTYPE4 $5    
 else
     echo "$1 is not valid"
     exit 1
